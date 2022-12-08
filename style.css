@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.calculator {
+    border: 1px solid red;
+}
