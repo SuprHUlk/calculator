@@ -1,11 +1,118 @@
+@font-face {
+    src: url(./fonts/MUNICH_SANS.ttf);
+    font-family: munich;
+}
+
+body {
+    background-color: black;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 100px;
+    padding-top: 35px;
+    padding-bottom: 0;;
+}
+
+.header {
+    font-family: munich;
+    font-weight: bolder;
+    font-size: 100px;
+    color: #fefefe;
+    
 }
 
 .calculator {
-    border: 1px solid red;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   gap: 20px;
+   width: 400px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    border: 10px solid #fefefe;
+    border-left: 5px;
+    border-right: 5px;
+    color: #fefefe;
+}
+
+.screen .previous {
+    font-family: munich;
+    font-size: 20px;
+    min-height: 30px;
+    text-align: end;
+    padding: 0 4px;
+}
+
+.screen .current {
+    font-family: munich;
+    font-size: 50px;
+    min-height: 60px;
+    text-align: end;
+    padding: 0 4px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    font-family: munich;
+    font-size: large; 
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: black;
+    color: #fefefe;
+    border-color: #fefefe;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #fefefe;
+    color: black;
+  }
+
+.row-1,.row-2,.row-3,.row-4,.row-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.row-1 {
+    justify-content: space-evenly;
+}
+
+.row-3 .btn-operation {
+    width: 78px;
+}
+
+#clear {
+    width: 148px;
+}
+
+#backspace {
+    padding: 14px 23px;
+}
+
+.btn-number.zero {
+    width: 160px;
+}
+
+.footer {
+    color: #fefefe;
+    font-weight: bolder;
+    font-size: 15px;
 }

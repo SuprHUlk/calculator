@@ -11,4 +11,4 @@ Operations<br>
 Features<br>
 ->Backspace<br>
 ->Reset<br>
-->Decimal number<br>
+->Decimal number support<br>
