@@ -1,10 +1,20 @@
+:root.dark {
+    --color-black: black;
+    --color-white: #fefefe;
+}
+
+:root.light {
+    --color-black: #fefefe;
+    --color-white: black;
+}
+
 @font-face {
     src: url(./fonts/MUNICH_SANS.ttf);
     font-family: munich;
 }
 
 body {
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .container {
@@ -21,7 +31,7 @@ body {
     font-family: munich;
     font-weight: bolder;
     font-size: 100px;
-    color: #fefefe;
+    color: var(--color-white);
     
 }
 
@@ -39,10 +49,10 @@ body {
     flex-direction: column;
     height: auto;
     width: 400px;
-    border: 10px solid #fefefe;
+    border: 10px solid var(--color-white);
     border-left: 5px;
     border-right: 5px;
-    color: #fefefe;
+    color: var(--color-white);
 }
 
 .screen .previous {
@@ -73,15 +83,15 @@ button {
     padding: 15px 32px;
     text-align: center;
     border-radius: 12px;
-    background-color: black;
-    color: #fefefe;
-    border-color: #fefefe;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-color: var(--color-white);
     transition-duration: 0.1s;
 }
 
 button:hover {
-    background-color: #fefefe;
-    color: black;
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
 
 .row-1,.row-2,.row-3,.row-4,.row-5 {
@@ -112,7 +122,13 @@ button:hover {
 }
 
 .footer {
-    color: #fefefe;
+    color: var(--color-white);
     font-weight: bolder;
     font-size: 15px;
+}
+
+#theme {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
 }

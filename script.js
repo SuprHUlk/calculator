@@ -6,6 +6,7 @@ const equal=document.querySelector("#operator");
 const reset=document.querySelector("#clear");
 const dot=document.querySelector("#dot");
 const bs=document.querySelector("#backspace");
+const theme=document.querySelector("#theme");
 const currentScreen=document.querySelector(".screen .current");
 const previousScreen=document.querySelector(".screen .previous");
 
@@ -46,6 +47,17 @@ reset.addEventListener('click',()=>{
 });
 
 window.addEventListener('keydown',keyboard);
+
+theme.addEventListener('click',()=>{
+    const mode=document.querySelector(":root").className==="dark"?"light":"dark";
+    document.querySelector(":root").className=mode;
+    if(theme.textContent==="DARK") {
+        theme.textContent="LIGHT";
+    }
+    else {
+        theme.textContent="DARK";
+    }
+})
 
 function appendNumber(s) {
     b+=s;
