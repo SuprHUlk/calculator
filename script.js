@@ -69,7 +69,7 @@ function point() {
         currentScreen.textContent=appendNumber("0.");
     }
     if(currentScreen.textContent.includes(".")) {
-        currentScreen.textContent=b;
+        return;
     }
     else {
         currentScreen.textContent=appendNumber(".");
