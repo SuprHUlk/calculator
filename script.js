@@ -6,7 +6,7 @@ const equal=document.querySelector("#operator");
 const reset=document.querySelector("#clear");
 const dot=document.querySelector("#dot");
 const bs=document.querySelector("#backspace");
-const theme=document.querySelector("#theme");
+const theme=document.querySelector("#btn-theme");
 const currentScreen=document.querySelector(".screen .current");
 const previousScreen=document.querySelector(".screen .previous");
 

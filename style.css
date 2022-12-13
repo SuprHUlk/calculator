@@ -7,7 +7,10 @@
     --color-black: #fefefe;
     --color-white: black;
 }
-
+* {
+    box-sizing: border-box;
+    
+}
 @font-face {
     src: url(./fonts/MUNICH_SANS.ttf);
     font-family: munich;
@@ -23,8 +26,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    padding-top: 35px;
-    padding-bottom: 0;;
+    padding-top: 23px;
+    padding-bottom: 0;
 }
 
 .header {
@@ -72,9 +75,10 @@ body {
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
 }
 
 button {
@@ -92,25 +96,10 @@ button {
 button:hover {
     background-color: var(--color-white);
     color: var(--color-black);
-  }
-
-.row-1,.row-2,.row-3,.row-4,.row-5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.row-1 {
-    justify-content: space-evenly;
-}
-
-.row-3 .btn-operation {
-    width: 78px;
 }
 
 #clear {
-    width: 148px;
+    grid-area: 1/1/2/3;
 }
 
 #backspace {
@@ -118,7 +107,7 @@ button:hover {
 }
 
 .btn-number.zero {
-    width: 160px;
+    grid-area: 5/1/6/3;
 }
 
 .footer {
@@ -127,8 +116,13 @@ button:hover {
     font-size: 15px;
 }
 
-#theme {
-    position: absolute;
+.theme {
+    position: fixed;
+    top: 7%;
+    right: 7%;
+}
+
+#btn-theme {
     top: 3rem;
     right: 3rem;
 }
