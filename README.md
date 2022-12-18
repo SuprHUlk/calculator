@@ -1,5 +1,5 @@
 # calculator
-Live demo -> [Click](suprhulk.github.io/calculator)<br>
+Live demo -> [Click](https://suprhulk.github.io/calculator/)<br>
 A calculator to perform basic arithmetic operations.<br> 
 <br>
 Operations<br>
